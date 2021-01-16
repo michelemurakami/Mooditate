@@ -1,0 +1,11 @@
+.info {
+	font-size: .9em;
+	font-family: 'Oswald', sans-serif;
+	line-height: .5px;
+	vertical-align: middle;
+    text-align: right;
+    padding-left: 50px;
+}
+table, th, td {
+    border: 1px solid black;
+  }

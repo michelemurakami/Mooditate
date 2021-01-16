@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="home.css"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
@@ -49,26 +50,35 @@ body {
 </head>
 <body>
 <title>Mooditate</title>
-<h1>Hello Meditators</h1>
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Home</a>
-  <a href="#">Meditate</a>
-  <a href="#">Planner</a>
-  <a href="#">Profile</a>
-</div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<table>
+  <td>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">Meditate</a>
+      <a href="#">Planner</a>
+      <a href="#">Profile</a>
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-   
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+  </td>
+  
+  <td class="info">
+    <h1>Mooditate</h1>
+  </td>
+
+</table>
+
 </body>
+
 </html> 
