@@ -1,83 +1,68 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" type="text/css" href="home.css"> 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 175px;
-}
-
-.sidenav a {
-  padding: 40px 8px 8px 80px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+  <link rel="stylesheet" type="text/css" href="home.css"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mooditate</title>
 </head>
-<body>
-<title>Mooditate</title>
 
-<table>
-  <td>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">Home</a>
-      <a href="#">Meditate</a>
-      <a href="#">Planner</a>
-      <a href="#">Profile</a>
+<body style="background-color: #b7d9f1;">
+<div class ="container-fluid">
+  <div class="row">
+    <div class="col-md-5">
+      <div id="mySidenav" class="sidenav float-left">
+        <a href="#" pxhref="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a>LOGO</a>
+        <a style="padding: 40px 8px 8px 90px" href="#">Home</a>
+        <a style="padding: 40px 8px 8px 90px" href="#">Meditate</a>
+        <a style="padding: 40px 8px 8px 90px" href="#">Profile</a>
+        <a style="padding: 40px 8px 8px 90px" href="#">Calendar</a>
+      </div>
+      <span style="font-size:40px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
     </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+    <div class="col-md-7">
+      <h1>Mooditate</h1>
+    </div>
+  </div>
 
-    <script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
+</div>
 
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
-  </td>
-  
-  <td class="info">
-    <h1>Mooditate</h1>
-  </td>
+<div class="row justify-content-center">
+  <div class="col-5">
+    <div style="text-align: center" class="alert alert-dark" role="alert">
+      <h2>Sea otters are cute but cows are better</h2>
+    </div>
+  </div>
+</div>
 
-</table>
+<div class="row">
+<h3 align="center">How are you feeling?</h3>
+</div>
+
+<div class="row justify-content-center">
+  <div class="col-lg-5 mb-4">
+    <div class="bg-white p-4 rounded shadow-sm h-100" align="center">
+      <button class="btn btn-success btn-circle m-1"><i class="fa fa-check"></i></button>
+      <button class="btn btn-primary btn-circle m-1"><i class="fa fa-cog"></i></button>
+      <button class="btn btn-info btn-circle m-1"><i class="fa fa-paper-plane"></i></button>
+      <button class="btn btn-warning btn-circle m-1"><i class="fa fa-tags"></i></button>
+      <button class="btn btn-danger btn-circle m-1"><i class="fa fa-sliders"></i></button>
+    </div>
+  </div>
+</div>
+
 
 </body>
 
